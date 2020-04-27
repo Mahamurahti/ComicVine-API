@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Comic Vine API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
 <header>
     <h1>Comic Vine API</h1>
 </header>
 <main>
-
+    <div id="heading">
+        <h1>Comic Vine API Searcher</h1>
+        <p>Write the name of the comic you want to search</p>
+    </div>
+    <div id="searchSection">
+        <input id="inputField" type="text" placeholder="Search...">
+        <button id="search" onclick="click()">Search</button>
+    </div>
+    <div id="outputSection">
+        <!-- HERE THE INFORMATION IS PRITNED -->
+    </div>
 </main>
 <footer>
 
 </footer>
+
+<script src="js/fetchScript.js"></script>
+
 </body>
 </html>
