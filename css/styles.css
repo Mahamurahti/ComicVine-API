@@ -34,16 +34,23 @@ li {
 a {
     display: block;
     padding: 8px;
+    margin-bottom: 30px;
 }
 
 a:link, a:visited {
-
+    background-color: white;
+    border-color: black;
+    color: black;
+    padding: 12px 32px;
+    text-align: center;
     text-decoration: none;
-    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
 }
 
 a:hover {
-
+    background-color: black;
+    color: white;
 }
 /* MAIN */
 main{
@@ -70,6 +77,20 @@ main{
     width: 100%;
     margin: auto;
 }
+button{
+    background-color: white;
+    border-color: black;
+    color: black;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
 input{
     height: 40px;
     width: 400px;
@@ -83,7 +104,7 @@ input{
     margin-top: 30px;
     justify-content: center;
     text-align: center;
-    min-width: 800px;
+    max-width: 1000px;
 }
 img {
     display: block;
@@ -95,6 +116,7 @@ img {
     border-bottom-color: black;
     border-top: 1px solid;
     border-top-color: black;
+    max-width: 1000px;
 }
 #outputSection h1{
     font-size: 40px;
