@@ -63,6 +63,8 @@ function printComicInformation(data) {
               <p>Aliases: ${data.results[i].aliases}</p>
               <p>${data.results[i].deck}</p>
               <p>Publisher: ${data.results[i].publisher.name}</p>
+              <p>For more details about this character visit:</p>
+          <a href="${data.results[i].site_detail_url}" target="_blank">${data.results[i].site_detail_url}</a>
               </section>`;
     }else{
       section.innerHTML += `<section class="comicInfo">
@@ -72,6 +74,8 @@ function printComicInformation(data) {
               <p>Real Name: ${data.results[i].real_name}</p>
               <p>${data.results[i].deck}</p>
               <p>Publisher: ${data.results[i].publisher.name}</p>
+              <p>For more details about this character visit:</p>
+          <a href="${data.results[i].site_detail_url}" target="_blank">${data.results[i].site_detail_url}</a>
               </section>`;
 
     }

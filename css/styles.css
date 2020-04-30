@@ -8,11 +8,15 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: lightgray;
+    background-image: url("../images/banner5.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0% 0% 25% 25%;
 }
 header h1{
     width: 100%;
     text-align: center;
+    background-color: rgba(255,255,255,0.8);
 }
 nav ul {
     list-style-type: none;
@@ -38,7 +42,7 @@ a {
 }
 
 a:link, a:visited {
-    background-color: white;
+    background-color: rgba(255,255,255,0.8);
     border-color: black;
     color: black;
     padding: 12px 32px;
@@ -76,6 +80,11 @@ main{
     justify-content: center;
     width: 100%;
     margin: auto;
+}
+@media screen and (max-width: 550px){
+    #searchSection button{
+        width: 405px;
+    }
 }
 button{
     background-color: white;
@@ -122,5 +131,27 @@ img {
     font-size: 40px;
 }
 #outputSection p{
+    font-size: 20px;
+}
+#outputSection a{
+    background-color: black;
+    color: white;
+}
+#outputSection a:hover{
+    background-color: white;
+    color: black;
+}
+#outputSection p a{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+#outputSection li a{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: black;
     font-size: 20px;
 }
