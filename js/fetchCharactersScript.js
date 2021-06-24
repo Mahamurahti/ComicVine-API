@@ -27,7 +27,7 @@ let proxyUrl = 'https://cors-anywhere.herokuapp.com/',
     targetUrl = `https://comicvine.gamespot.com/api/`;
 
 function fetchComics(data) {
-  fetch(proxyUrl + targetUrl + `search/?api_key=ee41526160ae9968da980fa835fe8f869cfce78f&format=json&query=${data}&resources=character`).
+  fetch(proxyUrl + targetUrl + `search/?api_key=${config.API_KEY}&format=json&query=${data}&resources=character`).
       then(function(response) {
         return response.json();
       }).
